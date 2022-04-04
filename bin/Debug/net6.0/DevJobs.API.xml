@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevJobs.API</name>
+    </assembly>
+    <members>
+        <member name="M:DevJobs.API.Controllers.JobApplicationsController.Post(System.Int32,DevJobs.API.Models.AddJobApplicationInputModel)">
+            <summary>
+            Cadastrar nome e email do candidato e o id da vaga desejada.
+            </summary>
+            <remarks>
+            "Nome, Email e Id:"
+            </remarks>
+            <param name="id">Cadastro de Dados, nome e email.</param>
+            <returns>Cadastro feito com sucesso.</returns>
+            <response code= "201">Sucesso.</response>
+            <response code= "400">Dados-Não-Cadastrados.</response>
+        </member>
+        <member name="M:DevJobs.API.Controllers.JobVacanciesController.GetById(System.Int32)">
+            <summary>
+            Buscar uma vaga de Dev através de um identificador Id.
+            </summary>
+            <remarks>
+            "Id da vaga."
+            </remarks>
+            <param name="id">Dados de uma vaga específica.</param>
+            <returns>Vaga encontrada.</returns>
+            <response code= "201">Sucesso.</response>
+            <response code= "400">Dados-Não-Encontrados.</response>
+        </member>
+        <member name="M:DevJobs.API.Controllers.JobVacanciesController.Post(DevJobs.API.Models.AddJobVacancyInputModel)">
+             <summary>
+             Cadastrar uma vaga de emprego.
+             </summary>
+             <remarks>
+            {
+            "title": "Dev Jr .NET",
+            "description": "vaga para sustentação de aplicações .Net core",
+            "company": "Lucas dev,
+            "isRemote": true,
+            "salaryRange": "3000 - 5000"
+            }
+            </remarks>
+             <param name="model">Dados da vaga.</param>
+             <returns>Objeto recém-criado.</returns>
+             <response code= "201">Sucesso.</response>
+             <response code= "400">Dados-inválidos.</response>
+        </member>
+    </members>
+</doc>
